@@ -52,14 +52,16 @@ function App() {
               {showPassword ? "Hide" : "Show"}
             </button>
           </div>
-           <div>
-          <button onClick={()=>setIsLogin((prev) =>!prev)}
-            className='underline'>{isLogin ? "SignUp" : "Login"}</button>
+
+           <div className='flex justify-between items-center'>
+          <button className='cursor-pointer'>forgot password?
+          </button>
+
          </div>
 
-         <div>
-          <button onClick={()=>setIsLogin((prev) =>!prev)}
-            className='underline'>Submit</button>
+         <div className='justify-center'>
+          <button onClick={()=> alert("Form Submitted")}
+            className=' cursor-pointer px-4 py-2 rounded-md font-semibold bg-blue-500 text-white shadow-md'>Submit</button>
          </div>
 
          
