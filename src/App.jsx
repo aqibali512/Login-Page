@@ -56,6 +56,12 @@ function App() {
           <button onClick={()=>setIsLogin((prev) =>!prev)}
             className='underline'>{isLogin ? "SignUp" : "Login"}</button>
          </div>
+
+         <div>
+          <button onClick={()=>setIsLogin((prev) =>!prev)}
+            className='underline'>Submit</button>
+         </div>
+
          
         </form>
       </div>
